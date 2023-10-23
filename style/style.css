@@ -38,7 +38,7 @@
     font-family: var(--fonteBanner);
     position: relative;
     min-height: 100vh;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 .topo video {
@@ -66,6 +66,13 @@
     justify-content: center;
     border-radius: 100%;
     background-image: linear-gradient(to right, var(--amarelo), var(--verde));
+}
+
+.topo .foto-h1 {
+    display: flex;
+    padding-top: 25px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .topo h1 {
@@ -106,12 +113,6 @@
     border-radius: 50%;
 }
 
-.topo .foto-h1 {
-    display: flex;
-    padding-top: 30px;
-    flex-direction: column;
-    gap: 20px;
-}
 
 .topo .links {
     width: 100%;
@@ -146,11 +147,108 @@
     left: 15px;
 }
 
+/* Estatisticas */
+.estatisticas {
+    width: 100%;
+    min-height: 100vh;
+    padding: 70px 0px;
+    font-family: var(--fonteEstatisticas);
+    background: transparent url(../assets/imagem-de-fundo.jpg) no-repeat top center fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
 
-/* Larguras de 100% e alturas de div pai em 100vh */
-/* A imagem de perfil da Seção Banner terá largura e altura de 200px e ficará espaçada a 20px (gap) do título. */
-/* O container dos links terá uma largura de 768px e ficará espaçado a 40px do container de informações */
-/* Os links ocuparão toda a largura do container, terão um espaçamento interno de 10px e ficarão espaçados a 20px (gap) entre si. */
-/* Haverá um espaço de 40px (gap) entre o subtítulo e a tabela da Seção Estatística */
-/* Todas as células da tabela terão um espaçamento interno de 20px */
-/* As células da primeira coluna terão seus elementos alinhados lado a lado na horizontal, com cada imagem tendo uma largura de 30px e um espaçamento de 10px (gap) entre elas e os textos */
+.estatisticas h2 {
+    color: var(--branco);
+    font-size: 50px;
+    font-weight: 500;
+    text-shadow: 3px 3px 1px black;
+
+}
+
+.estatisticas .container-base {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.estatisticas table {
+    width: 100%;
+}
+
+.estatisticas table .team {
+    min-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+    font-weight: bold;
+}
+
+.estatisticas table .team img {
+    position: absolute;
+    left: 15px;
+}
+
+.estatisticas table thead th {
+    padding: 10px;
+    font-size: 20px;
+    background-color: var(--pretoTransparente);
+    color: var(--branco);
+}
+
+.estatisticas table tr td, .estatisticas table tr th {
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.estatisticas table tbody tr:nth-child(odd) {
+    background-color: var(--brancoTransparente);
+}
+
+.estatisticas table tbody tr:nth-child(even) {
+    background-color: var(--pretoTransparente);
+    color: var(--branco);
+}
+
+.estatisticas img {
+    width: 25px;
+}
+
+.estatisticas p {
+    padding: 10px;
+    background-color: var(--pretoTransparente);
+    color: white;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Rodapé */
+
+footer {
+    padding: 20px 0px;
+    text-align: center;
+    background-color: var(--preto);
+    color: white;
+    font-size: 18px;
+    font-family: var(--fonteBanner);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--preto);
+    background-color: var(--brancoTransparente);
+    border-radius: 10px;
+    padding: 3px 7px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    background-color: var(--amarelo);
+}
